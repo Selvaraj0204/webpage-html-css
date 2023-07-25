@@ -1,0 +1,206 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f3f7f1 ;
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  background: #7295a0;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover{
+  width: 320px;
+  transition: 1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo img{
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  width: 280px;
+  font-size: 15px;
+  color: rgb(22, 13, 13);
+  display: table;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 15px;
+}
+a:hover{
+  background: rgb(153, 194, 187);
+}
+.logout{
+  position: absolute;
+  bottom: 25px;
+}
+
+.container{
+  display: flex;
+}
+
+/* MAin Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 90%;
+}
+.main-top{
+  display: flex;
+  margin-left: 18px;
+  width: 100%;
+}
+.main .users{
+  display: flex;
+  width: 100%;
+}
+.users .card{
+  width: 25%;
+  margin: 15px;
+  background: #84a7af;
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0 25px 35px rgba(34, 3, 3, 0.1);
+}
+.users .card img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.users .card h4{
+  text-transform: uppercase;
+}
+.users .card p{
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.users table{
+  margin:  auto;
+}
+.users .per span{
+  padding: 5px;
+  border-radius: 20px;
+  background: rgb(124, 180, 196);
+}
+.users td{
+  font-size: 14px;
+  padding-right: 15px;
+}
+.users .card button{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgb(5, 12, 14);
+}
+.users .card button:hover{
+  background: rgb(19, 3, 19);
+  color: #ebdede;
+  transition: 0.5s;
+}
+
+.users .card :hover{
+    transform: scale(1);
+}
+
+.users :hover{
+    transform: scale(1.1);
+}
+
+/*Attendance List section  */
+.attendance{
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #e9e8f0;
+  border-radius: 15px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+table thead tr{
+  color: #310707;
+  background: rgb(107, 140, 145);
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #b1b8cf;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: rgb(48, 43, 117);
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid rgb(15, 9, 15);
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgb(26, 3, 26);
+}
+.table button:hover{
+  background: rgb(54, 90, 145);
+  color: #fff;
+  transition: 0.5rem;
+}
